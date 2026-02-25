@@ -1,1 +1,15 @@
+import re
 
+def main():
+
+    while True:
+
+        phone = input("What's your phone number? ").strip()
+
+        if re.search(r"^07\d{9}$", phone):
+            print("Valid")
+            break
+        else:
+            print("Nope")
+    
+main()
