@@ -1,0 +1,15 @@
+import re
+
+def main():
+
+    while True:
+
+        id = input("What's your student ID? ").strip()
+
+        if re.search(r"^[a-zA-Z]{4}+\d{4}$", id):
+            print("Valid")
+            break
+        else:
+            print("Nope")
+    
+main()
